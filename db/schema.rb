@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140806235136) do
+ActiveRecord::Schema.define(version: 20140811225127) do
+
+  create_table "children", force: true do |t|
+    t.text     "firstname"
+    t.text     "lastname"
+    t.integer  "age"
+    t.integer  "height"
+    t.integer  "weight"
+    t.string   "distinguishing"
+    t.text     "marks"
+    t.string   "relavent"
+    t.string   "medical"
+    t.text     "conditions"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.text     "name"
