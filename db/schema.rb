@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140811235932) do
+ActiveRecord::Schema.define(version: 20140812004233) do
 
   create_table "children", force: true do |t|
     t.text     "firstname"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20140811235932) do
     t.text     "conditions"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "hair_color"
+    t.text     "eyecolor"
   end
 
   create_table "users", force: true do |t|
