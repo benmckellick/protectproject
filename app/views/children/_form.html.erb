@@ -47,17 +47,10 @@
     <%= f.label :eyecolor %><br>
     <%= f.text_area :eyecolor %>
   </div>
-  <% form_for @child, :html => { :multipart => true } do |form| %>
-  <ol class="formList">
-    <!-- Other fields go here... -->
-    <li>
-      <%= form.label :photo, "Photo" %>
-      <%= form.file_field :photo %>
-    <li>
-      <%= form.submit "Submit" %>
-    </li>
-  </ol>
-<% end %>
+  <div class="field">
+      <%= f.label :photo, "Photo" %>
+      <%= f.file_field :photo %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
