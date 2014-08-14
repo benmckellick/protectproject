@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140813230617) do
+ActiveRecord::Schema.define(version: 20140814000003) do
 
   create_table "children", force: true do |t|
     t.text     "firstname"
@@ -19,10 +19,7 @@ ActiveRecord::Schema.define(version: 20140813230617) do
     t.integer  "age"
     t.integer  "height"
     t.integer  "weight"
-    t.string   "distinguishing"
-    t.text     "marks"
     t.string   "relavent"
-    t.string   "medical"
     t.text     "conditions"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -32,6 +29,7 @@ ActiveRecord::Schema.define(version: 20140813230617) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.text     "distinguishing_marks"
   end
 
   create_table "users", force: true do |t|
