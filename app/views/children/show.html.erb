@@ -39,7 +39,7 @@
 </p>
 <p>
   <strong>photo:</strong>
-  <%= @child.photo %>
+  <%= image_tag(@child.photo, class: "childimage") %>
 </p>
 <%= link_to 'Edit', edit_child_path(@child) %> |
 <%= link_to 'Back', children_path %>
