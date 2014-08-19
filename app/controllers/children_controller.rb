@@ -4,7 +4,7 @@ class ChildrenController < ApplicationController
   # GET /children
   # GET /children.json
   def index
-    @children = Child.all
+    @children = Child.where(user_id: current_user.id)
   end
 
   # GET /children/1

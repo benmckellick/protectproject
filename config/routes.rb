@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   root 'devise/registrations#new'
 end
 
+  
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
